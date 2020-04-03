@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.cover{
+    background-color: black;
+    background-size: cover;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.img-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#who-we-are{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 900px;
+    width: auto;
+}
+#andes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 900px;
+    width: auto;
+}
+#fund{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 900px;
+    width: auto;
+}
+.read{
+    margin: auto;
+    width: 10%;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    color: black;
+    /*Code to create horizontal scrolling box from https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6*/
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.story-box {
+    display: inline-block;
+}
+.topic-box {
+    display: inline-block;
+}
+.box-img{
+    height: 400px;
+    width: auto;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style-type: none;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

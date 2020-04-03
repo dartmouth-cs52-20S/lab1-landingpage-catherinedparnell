@@ -2,43 +2,38 @@
 <html>
     <head>
         <title>Lab 1 Landing Page</title>
-        <h1>Zahara</h1>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <nav>
-        <ul>
-            <li>Place</li>
-            <li>Sport</li>
-            <li>Climate</li>
-            <li>Wildlife</li>
-            <li>Gallery</li>
-            <li>Join</li>
-            <li>About</li>
-            <li>
-                <input type="search" placeholder="Find A Story"></input>
-                <input type="button" value="Go"></input>
-            </li>
-        </ul>
-    </nav>
     <body>
-        <div class="img text">
-            <div class="img1"></div>
-            <div class="img2"></div>
-            <div class="img3"></div>
+        <div class="img-text" id="who-we-are">
+            <nav>
+                <ul class="navBar">
+                    <li><h1>Zahara</h1></li>
+                    <li><a href="#">Place</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Climate</a></li>
+                    <li><a href="#">Wildlife</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <input type="search" placeholder="Find A Story"></input>
+                        <input type="button" value="Go"></input>
+                    </li>
+                </ul>
+            </nav>
             <div class="showcase-titles">Who we are</div>
-            <p>
-                Named after the Zahara de Sierra in the province of C&aacutediz, Spain, we aim to foster awareness of conservation 
-                and a venerance for the great outdoors through the power of word and photography.
-            </p>
+            <p>Named after the Zahara de Sierra in the province of C&aacutediz, Spain, we aim to foster awareness of conservation and a venerance for the great outdoors through the power of word and photography.</p>
             <input type="button" class="read" value="Learn More"></input>
         </div>
-        <div class="topics" id="stories">
+        <div id="stories">
             <div class="box-titles">Trending Stories</div>
-            <ul>
+            <ul class="boxes" >
                 <li>
                     <div class="story-box">
                         <div class="story-title">Is this the cure we've been looking for?</div>
                         <div class="author">Emma Staiger</div>
-                        <img src="https://images.unsplash.com/photo-1569225022281-f652746229fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1569225022281-f652746229fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="overlay">
                             <div class="story-summary">With the rise of COVID-19 we're starting to see an adverse positive effect...on climate change.</div>
                         </div>
@@ -49,7 +44,7 @@
                     <div class="story-box">
                         <div class="story-title">A daily dose of Green</div>
                         <div class="author">Sydney Towle</div>
-                        <img src="https://images.unsplash.com/photo-1585067934141-ae65c82e7110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1585067934141-ae65c82e7110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="overlay">
                             <div class="story-summary">A spotlight on the importance of nature and simply just getting outside.</div>
                         </div>
@@ -60,7 +55,7 @@
                     <div class="story-box">
                         <div class="story-title">El Cap's fiercest send</div>
                         <div class="author">Zoe Dainton</div>
-                        <img src="https://images.unsplash.com/photo-1567710127256-1be98eed34a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=977&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1525226637460-98683232b412?ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"></img>
                         <div class="overlay">
                             <div class="story-summary">Fearless climber, Zoe Dainton, chronicles her free solo up Yosemite's El Capitan, as she claimed her throne on the list of climbing greats.</div>
                         </div>
@@ -71,7 +66,7 @@
                     <div class="story-box">
                         <div class="story-title">Riding The Whole Enchilada</div>
                         <div class="author">Elizabeth Wilson</div>
-                        <img src="https://images.unsplash.com/photo-1585766765962-28aa4c7d719c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1585766765962-28aa4c7d719c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="overlay">
                             <div class="story-summary">Three women take on Moab's famous mountain biking trail, The Whole Enchilada.</div>
                         </div>
@@ -80,11 +75,25 @@
                 </li>
                 <li>
                     <div class="story-box">
+                        <div class="story-title">Mother of All Pandas</div>
+                        <div class="author">Allie Jones</div>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1570288685369-f7305163d0e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"></img>
+                        <div class="overlay">
+                            <div class="story-summary">
+                                Giant Panda keeper and researcher Allie Jones dons a panda disguise in order to help raise Gugu the panda cub.
+                            </div>
+                        </div>
+                        <input type="button" value="Read"></input>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
                         <div class="story-title">At home in the whites</div>
                         <div class="author">Talia Pikounis</div>
-                        <img src="https://images.unsplash.com/photo-1541428020872-7e39d27ed865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1541428020872-7e39d27ed865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="overlay">
-                            <div class="story-summary">Famous doctor, Talia Pikounis, writes fondly of her summers in New Hampshire's 
+                            <div class="story-summary">
+                                Famous doctor, Talia Pikounis, writes fondly of her summers in New Hampshire's 
                                 White Mountains and how impactful the landscape was on her childhood.
                             </div>
                         </div>
@@ -92,65 +101,78 @@
                     </div>
                 </li>
                 <li>
+                    <div class="story-box">
+                        <div class="story-title">She farms your kilt off</div>
+                        <div class="author">Ally Tannenbaum and Julie Jones</div>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1561543057-28707b17b08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"></img>
+                        <div class="overlay">
+                            <div class="story-summary">
+                                Amidst the backdrop of the Scottish Highlands, Ally Tannenbaum and Julie Jones farm shaggy cows.
+                            </div>
+                        </div>
+                        <input type="button" value="Read"></input>
+                    </div>
+                </li>
+                <li>
                     <div class="story-box" id="view">
-                        <img src="https://images.unsplash.com/photo-1513809491260-0e192158ae44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=936&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1513809491260-0e192158ae44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=936&q=80"></img>
                         <input type="button" value="View All"></input>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="img text">
+        <div class="img-text" id="andes">
             <div class="showcase-titles">the allure of the Andes</div>
             <p>Two backpackers trek the ancient Inkan trails of the Sacred Valley.</p>
             <input type="button" class="read" value="Read"></input>
         </div>
-        <div class="topics" id="topics">
+        <div id="topics">
             <div class="box-titles">Trending Topics</div>
-            <ul>
+            <ul class="boxes">
                 <li>
                     <div class="topic-box">
-                        <img src="https://images.unsplash.com/photo-1585282284315-cf1fff918a0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1585282284315-cf1fff918a0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="topic-title">COVID-19</div>
                         <input type="button" value="Go"></input>
                     </div>
                 </li>
                 <li>
                     <div class="topic-box">
-                        <img src="https://images.unsplash.com/photo-1511936606692-5e0d73f6b638?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1511936606692-5e0d73f6b638?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"></img>
                         <div class="topic-title">Conserve</div>
                         <input type="button" value="Go"></input>
                     </div>
                 </li>
                 <li>
                     <div class="topic-box">
-                        <img src="https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=931&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=931&q=80"></img>
                         <div class="topic-title">Climb</div>
                         <input type="button" value="Go"></input>
                     </div>
                 </li>
                 <li>
                     <div class="topic-box">
-                        <img src="https://images.unsplash.com/photo-1571009774841-16d78e4d095f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1571009774841-16d78e4d095f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="topic-title">Bike</div>
                         <input type="button" value="Go"></input>
                     </div>
                 </li>
                 <li>
                     <div class="topic-box">
-                        <img src="https://images.unsplash.com/photo-1485970671356-ff9156bd4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1485970671356-ff9156bd4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <div class="topic-title">Ski</div>
                         <input type="button" value="Go"></input>
                     </div>
                 </li>
                 <li>
                     <div class="topic-box" id="view-all">
-                        <img src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
+                        <img class="box-img" src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"></img>
                         <input type="button" value="View All"></input>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="img text">
+        <div class="img-text" id="fund">
             <div class="showcase-titles">the Zahara Fund</div>
             <p>Raising money to foster conservation efforts all around the world.</p>
             <input type="button" class="read" value="Read"></input>
@@ -167,22 +189,22 @@
                     <div class="footer-titles">Donate</div>
                     <div class="footer-description">Any money donated or raised by Zahara goes to the following programs.</div>
                     <ul>
-                        <li>Zahara Fund</li>
-                        <li>Zahara Youth Mentorship</li>
-                        <li>Get Out n Go Pro</li>
+                        <li><a href="#">Zahara Fund</a></li>
+                        <li><a href="#">Zahara Youth Mentorship</a></li>
+                        <li><a href="#">Get Out n Go Pro</a></li>
                     </ul>
                 </div>
                 <div class="more-info">
                     <div class="footer-titles">More Info</div>
                     <ul>
-                        <li>Privacy Policy</li>
-                        <li>Get Involved</li>
-                        <li>Careers</li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer2">
-                <p>&copy Sahara, Inc. All Rights Reserved.</p>
+                <p>&copy Zahara, Inc. All Rights Reserved.</p>
                 <p>English</p>
             </div>
         </footer>
