@@ -1,10 +1,11 @@
-body{
+body,html{
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     color: white;
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 .cover{
     background-color: black;
@@ -22,6 +23,9 @@ body{
 .navBar:hover{
     background: white;
     transition: all 0.5s ease 0s;
+}
+ .lines{
+    opacity: 0%;
 }
 h1{
     font-family: 'Liu Jian Mao Cao', cursive;
@@ -114,17 +118,19 @@ input[type="search"]::placeholder{
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    height: 900px;
     width: auto;
 }
 #who-we-are{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");   
+    height: 900px;
 }
 #andes{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    height: 1400px;
 }
 #fund{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    height: 1400px;
 }
 .title-sum{
     /*Code to center text from https://www.w3.org/Style/Examples/007/center.en.html*/
@@ -153,9 +159,7 @@ input[type="search"]::placeholder{
 }
 .img-button:hover{
     text-align: center;
-    
     transition: all 0.5s ease 0s;
-    
     transform: scale(1.06);
 }
 .boxes{
@@ -168,6 +172,7 @@ input[type="search"]::placeholder{
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    margin-bottom: 35px;
 }
 .box-titles{
     color: black;
@@ -219,6 +224,8 @@ input[type="search"]::placeholder{
     background-color: #F5F5F5;
     margin-left: 10px;
     margin-right: 10px;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
 }
 .story-box:hover .overlay{
     height: 70%;
@@ -378,4 +385,36 @@ ul{
     margin: 20px;
     text-align: center;
     margin-bottom: 30px;
+}
+@media only screen and (max-width: 640px) {
+    h1{
+        color: black;
+    }
+    input[type="search"]{
+        display: none;
+    }
+    #search-button{
+        display: none;
+    }
+    .navBar{
+        background-color: white;
+        color: black;
+    }
+    .navBar:hover{
+        flex-direction: column;
+        
+    }
+    .lines{
+        color: black;
+        position: relative;
+    }
+    .links{
+        position: absolute;
+    }
+    .img-text{
+        height: 400px;
+    }
+    .footer1{
+        flex-direction: column;
+    }
 }
