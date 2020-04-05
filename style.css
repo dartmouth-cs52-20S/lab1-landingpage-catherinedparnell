@@ -23,7 +23,7 @@ body,html{
 nav{
     width: 100%;
 }
-/* Hide Hamburger */
+/* Code for hamburger bar from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
 #page-nav label, #hamburger{
     color: black;
     display: none;
@@ -387,6 +387,7 @@ ul{
     margin-bottom: 30px;
 }
 @media only screen and (max-width: 640px) {
+    /* code for hamburger by adapted (not copied from) both https://css-tricks.com/the-checkbox-hack/ and https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/*/
     input[type="search"]{
         display: none;
     }
@@ -428,5 +429,6 @@ ul{
     }
     .footer1{
         flex-direction: column;
+        justify-content: center;
     }
 }
