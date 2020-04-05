@@ -3,16 +3,20 @@
     <head>
         <title>Lab 1 Landing Page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Liu+Jian+Mao+Cao&family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Liu+Jian+Mao+Cao&family=Work+Sans&display=swap">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <div class="img-text" id="who-we-are">
-            <nav>
+            <nav id="page-nav">
+                <input type="checkbox" id="hamburger">
                 <ul class="navBar">
-                    <li><h1>Zahara</h1></li>
-                    <li><i id="lines" class="fas fa-grip-lines"></i></li>
+                    <li>
+                        <div id="company-title">
+                            <h1>Zahara</h1>
+                            <label for="hamburger">&#9776;</label>
+                        </div>
+                    </li>
                     <li><a class="link" href="#">Place</a></li>
                     <li><a class="link" href="#">Sport</a></li>
                     <li><a class="link" href="#">Climate</a></li>
@@ -100,7 +104,7 @@
                             <div class="story-title">They farm your kilt off</div>
                             <div class="author">Ally Baum & Julie Jones</div>
                             <div class="story-summary">
-                                Amidst the backdrop of the Scottish<br>Highlands, Ally Tannenbaum and <br>Julie Jones farm shaggy cows.
+                                Amidst the backdrop of the Scottish<br>Highlands, Ally Baum and <br>Julie Jones farm shaggy cows.
                             </div>
                         </div>
                         <input class="story-button" type="button" value="READ"></input>

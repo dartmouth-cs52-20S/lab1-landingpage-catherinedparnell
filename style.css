@@ -7,10 +7,6 @@ body,html{
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
 }
-.cover{
-    background-color: black;
-    background-size: cover;
-}
 .navBar{
     display: flex;
     flex-direction: row;
@@ -24,8 +20,13 @@ body,html{
     background: white;
     transition: all 0.5s ease 0s;
 }
- .lines{
-    opacity: 0%;
+nav{
+    width: 100%;
+}
+/* Hide Hamburger */
+#page-nav label, #hamburger{
+    color: black;
+    display: none;
 }
 h1{
     font-family: 'Liu Jian Mao Cao', cursive;
@@ -117,7 +118,6 @@ input[type="search"]::placeholder{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
     width: auto;
 }
 #who-we-are{
@@ -220,7 +220,7 @@ input[type="search"]::placeholder{
     overflow: hidden;
     width: 350px;
     height: 29%;
-    transition: .5s ease;
+    transition: all 0.5s ease;
     background-color: #F5F5F5;
     margin-left: 10px;
     margin-right: 10px;
@@ -387,9 +387,6 @@ ul{
     margin-bottom: 30px;
 }
 @media only screen and (max-width: 640px) {
-    h1{
-        color: black;
-    }
     input[type="search"]{
         display: none;
     }
@@ -399,20 +396,35 @@ ul{
     .navBar{
         background-color: white;
         color: black;
-    }
-    .navBar:hover{
         flex-direction: column;
-        
-    }
-    .lines{
-        color: black;
-        position: relative;
-    }
-    .links{
+        transition: all 0.5s ease 0s;
         position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        height: 9%;
     }
-    .img-text{
-        height: 400px;
+    #page-nav label, #hamburger{
+        display: flex;
+    }
+    #hamburger{
+        top: 20px;
+        left: 100px;
+        color: black;
+    }
+    #hamburger:checked ~ .navBar{
+        height: 40%;
+        transition: all 0.5s ease 0s;
+        z-index: 9;
+    }
+    #company-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #who-we-are{
+        height: 1200px;
     }
     .footer1{
         flex-direction: column;
