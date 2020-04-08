@@ -2,9 +2,8 @@
 lab1-landingpage-catherinedparnell created by GitHub Classroom
 
 For this project I based my website off of https://www.patagonia.com/home/. 
-As a whole, I kept the design elements mostly the same/similar. 
-Instead of expanding/contracting transitions of the hero images, I chose to implement a parallax scrolling effect.
-For the sections with stories and text, the transitions/animations follow the design on the Patagonia site.
+As a whole, I kept the design elements mostly the same/similar. For the sections with stories and text, the transitions/animations follow the design on the Patagonia site. 
+Yet instead of expanding/contracting transitions of the hero images, I chose to implement a parallax scrolling effect.
 Most all of the features, including buttons, text boxes, etc either expand on hover, change color on hover, or both.
 The hamburger menu is implemented in the mobile mode (extra credit). Below is a screen cap of the original html prior to adding css.
 
