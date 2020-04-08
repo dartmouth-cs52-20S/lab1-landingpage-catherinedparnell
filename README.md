@@ -8,6 +8,6 @@ For the sections with stories and text, the transitions/animations follow the de
 Most all of the features, including buttons, text boxes, etc either expand on hover, change color on hover, or both.
 The hamburger menu is implemented in the mobile mode (extra credit).
 
-![Image description(./Screen Shot 2020-04-02 at 9.11.34 PM.png?raw=true "HTML struture screen cap")
+![Image description(https://github.com/dartmouth-cs52-20S/lab1-landingpage-catherinedparnell/blob/gh-pages/Screen%20Shot%202020-04-02%20at%209.11.34%20PM.png)
 
 
