@@ -7,6 +7,7 @@ body,html{
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
 }
+/* Styling related to navBar elements*/
 .navBar{
     display: flex;
     flex-direction: row;
@@ -106,6 +107,7 @@ input[type="search"]::placeholder{
     transition: all 0.5s ease 0s;
     transform: scale(1.07);
 }
+/* Styling related to hero-image elements*/
 .img-text{
     display: flex;
     flex-direction: column;
@@ -162,6 +164,7 @@ input[type="search"]::placeholder{
     transition: all 0.5s ease 0s;
     transform: scale(1.06);
 }
+/* Styling related to topics/stories elements*/
 .boxes{
     display: flex;
     flex-direction: row;
@@ -304,6 +307,7 @@ input[type="search"]::placeholder{
     width: 27%;
     transition: all 0.5s ease 0s;
 }
+/* Styling related to footer elements*/
 footer{
     background-color: black;
     display: flex;
@@ -386,6 +390,7 @@ ul{
     text-align: center;
     margin-bottom: 30px;
 }
+/* Styling related to media elements*/
 @media only screen and (max-width: 640px) {
     /* code for hamburger by adapted (not copied from) both https://css-tricks.com/the-checkbox-hack/ and https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/*/
     input[type="search"]{
