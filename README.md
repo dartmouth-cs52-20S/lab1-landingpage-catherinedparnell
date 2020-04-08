@@ -7,3 +7,5 @@ Instead of expanding/contracting transitions of the hero images, I chose to impl
 For the sections with stories and text, the transitions/animations follow the design on the Patagonia site.
 Most all of the features, including buttons, text boxes, etc either expand on hover, change color on hover, or both.
 The hamburger menu is implemented in the mobile mode (extra credit).
+
+![Alt text](/blob/gh-pages/Screen%20Shot%202020-04-02%20at%209.11.34%20PM.png "HTML struture screen cap")
